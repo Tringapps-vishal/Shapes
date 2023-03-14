@@ -1,7 +1,9 @@
 package shapes;
 
-public class Triangle implements calculations{
-    private final double base,height,side;
+public class Triangle implements Calculations{
+    private final double base;
+            double height;
+            double side;
     public Triangle(double base, double height, double side) {
         this.base = base;
         this.height = height;

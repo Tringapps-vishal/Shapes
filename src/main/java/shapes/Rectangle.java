@@ -1,7 +1,8 @@
 package shapes;
 
-public class Rectangle implements calculations {
-    private final double length,width;
+public class Rectangle implements Calculations {
+    private final double length;
+    double width;
 
     public Rectangle(double length, double width) {
         this.length = length;

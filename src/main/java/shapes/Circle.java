@@ -1,6 +1,6 @@
 package shapes;
 
-public class Circle implements calculations{
+public class Circle implements Calculations{
     private final double radius;
 
     public Circle(double radius) {
