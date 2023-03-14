@@ -25,7 +25,6 @@ public class Main {
                     log.info("Perimeter of Triangle :" + t.perimeter(base, height, side));
                     log.info("Area of Triangle :" + t.area(base,height));
                 }
-
                 case 2 -> {
                     log.info("VALUES FOR RECTANGLE");
                     log.info("Enter the length value:");
