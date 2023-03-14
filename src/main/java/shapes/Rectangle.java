@@ -1,10 +1,8 @@
 package shapes;
 
-import java.util.logging.Logger;
-
 public class Rectangle implements calculations {
     private final double length,width;
-    Logger log = Logger.getLogger("calculation");
+
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
@@ -12,10 +10,10 @@ public class Rectangle implements calculations {
 
     public double perimeter()
     {
-        return (2*(length+width));
+        return (2*(this.length+this.width));
     }
     public double area()
     {
-        return (length*width);
+        return (this.length*this.width);
     }
 }
