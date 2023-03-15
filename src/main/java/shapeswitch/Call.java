@@ -1,6 +1,7 @@
 package shapeswitch;
 
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import shapes.*;
 
@@ -17,7 +18,7 @@ public class Call {
         log.info("Enter the side value:");
         double side = sc.nextInt();
         Triangle t = new Triangle(base, height, side);
-        log.info("Perimeter of Triangle :" + t.perimeter());
+        log.log(Level.INFO,()->"Perimeter of Triangle :" + t.perimeter());
         log.info("Area of Triangle :" + t.area());
     }
     public void rectangle()
@@ -28,7 +29,7 @@ public class Call {
         log.info("Enter the width value:");
         double width = sc.nextInt();
         Rectangle r = new Rectangle(length, width);
-        log.info("Perimeter of Rectangle :" + r.perimeter());
+        log.log(Level.INFO,()->"Perimeter of Rectangle :" + r.perimeter());
         log.info("Area of Rectangle :" + r.area());
     }
     public void circle()
@@ -37,7 +38,7 @@ public class Call {
         log.info("Enter the radius value:");
         double radius = sc.nextInt();
         Circle c = new Circle(radius);
-        log.info("Perimeter of Circle :" + c.perimeter());
+        log.log(Level.INFO,()->"Perimeter of Circle :" + c.perimeter());
         log.info("Area of Circle :" + c.area());
     }
 }
